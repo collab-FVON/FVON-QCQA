@@ -18,20 +18,8 @@ This README and the QC/QA workflows will be updated collaboratively by the FVON 
 
 ---
 
-## Original Content from BDC_qc
-
-# ODN_QC
-Collection of manuals and scripts to assist in automated quality assurance and quality control for oceanographic data collected via fishing gear as a platform.
-
-<br>
-
-## Manual
-
-Fishing gear as a platform for sensors: Implementation of real-time quality control of in-situ temperature and salinity data collected via fishing gear
-
-Desember 2024
-
-Authors: Berthe Vastenhoud, Carles Castro Muniain /& Cooper Van Vranken
+# FVON_QC
+Collection of manuals and scripts to assist in automated quality assurance and quality control for oceanographic data collected via fishing gear as a platform. 
 
 <br>
 
@@ -60,7 +48,6 @@ Authors: Berthe Vastenhoud, Carles Castro Muniain /& Cooper Van Vranken
 		* [Mud test](#mud-test)
 		* [Timing / gap test](#timing-gap-test)
 		* [Climatology test](#climatology-test)
-		* [Drift test (under development)](#drift-test-under-development)
 * [References](#references)
 
 <!--te-->
