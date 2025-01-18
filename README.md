@@ -2,13 +2,13 @@
 
 # FVON-QCQA: Fishing Vessel Ocean Observing Network - QC/QA Guidelines
 
-This repository provides tools, workflows, and guidelines for Quality Control (QC) and Quality Assurance (QA) of fishing vessel ocean observing data. 
+This repository provides tools, workflows, and guidelines for automated near real-time Quality Control (QC) of fishing vessel ocean observing data. 
 
 ---
 
 ## Acknowledgement
 
-This work builds on the QC/QA frameworks provided by [BDC_qc](https://github.com/BerringDC/BDC_qc), developed by the Ocean Data Network (ODN) and [moana-qc](https://github.com/metocean/moana-qc/blob/master/docs/moana_sensor_qc.md), developed by the moana project. We extend their work and adapt it for FVON's specific needs.
+This work builds on the QC/QA frameworks provided by [BDC_qc](https://github.com/BerringDC/BDC_qc), developed by the Ocean Data Network (ODN) and [moana-qc](https://github.com/metocean/moana-qc/blob/master/docs/moana_sensor_qc.md), developed by the moana project. Addtitional input from the AdriFOOS program at [CNR-IRBIM](https://www.irbim.cnr.it/en/). We extend their work and adapt it for FVON's specific needs.
 
 ---
 
@@ -19,7 +19,7 @@ This README and the QC/QA workflows will be updated collaboratively by the FVON 
 ---
 
 # FVON_QC
-Collection of manuals and scripts to assist in automated quality assurance and quality control for oceanographic data collected via fishing gear as a platform. 
+Collection of manuals and scripts to assist in automated quality assurance and quality control for oceanographic subsurface profile data collected via fishing gear as a platform. These QC tests apply to both fixed and mobile gears.
 
 <br>
 
@@ -56,7 +56,7 @@ Collection of manuals and scripts to assist in automated quality assurance and q
 
 ## Introduction
 
-This document describes the implementation of the automated checks that are performed on CTD (Conductivity, Temperature, Depth) data that are collected via fishing gear as a platform for sensors. Trajectory data describe the positions and time of the fishing vessel.
+This document describes the implementation of the automated checks that are performed on CTD (Conductivity, Temperature, Depth) or TD (Temperature, Depth) data that are collected via fishing gear as a platform for sensors. Trajectory data describe the positions and time of the fishing vessel.
 
 <div align="center">
 
@@ -72,9 +72,9 @@ This document describes the implementation of the automated checks that are perf
 
 The data collected by fishing vessels of opportunity, i.e. with sensors attached to fishing gear, is aimed to be interoperable and used by different users with different requirements. In order to maximize (re)usability, the data is quality controlled and flagged to characterize data. Flags are always included in the data delivery, to optimize data reliability and consistency.
 
-Quality checks are mainly based on the tests described by IOOS (U.S. Integrated Ocean Observing System, 2020), EuroGOOS (EuroGOOS DATA-/MEQ working group, 2010), the Glider network (U.S. Integrated Ocean Observing System, 2016) and the Argo network (Wong et al., 2020).
+Quality checks are mainly based on the tests described by IOOS QARTOD (U.S. Integrated Ocean Observing System, 2020), EuroGOOS (EuroGOOS DATA-/MEQ working group, 2010), the Glider network (U.S. Integrated Ocean Observing System, 2016) and the Argo network (Wong et al., 2020).
 
-The flags used by BDC to indicate QC status are based on existing standards defined by other programs and datasets for oceanographic observations. Flags are indicated in Table 1.
+The flags used to indicate QC status are based on existing standards defined by other programs and datasets for oceanographic observations. Flags are indicated in Table 1.
 
 <div align="center">
 
