@@ -14,7 +14,7 @@ This work builds on the QC/QA frameworks provided by [BDC_qc](https://github.com
 
 ## Updates and Contributions
 
-This README and the QC/QA workflows will be updated collaboratively by the FVON team. Contributions are welcome! Submit a pull request for any additions or improvements.
+This README and the QC/QA workflows will be updated collaboratively by the FVON team. Contributions are welcome! Please submit a pull request for any additions or improvements.
 
 ---
 
