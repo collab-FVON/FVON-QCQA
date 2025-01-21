@@ -144,7 +144,7 @@ The flags used to indicate QC status are based on existing standards defined by 
 
 #### Platform identification (under development)
 
-Check if there is an unknown sensor ID/Vessel ID.
+Check if there is an unknown sensor ID/Vessel ID
 
 <br>
 
