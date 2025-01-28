@@ -29,7 +29,7 @@ Collection of manuals and scripts to assist in automated quality assurance and q
 
 * [Introduction](#introduction)
 * [Flags](#flags)
-* [General Quality Control Tests](#gqct)
+* [General Quality Control Tests](#general-quality-control-tests)
 * [Real-time Quality control](#real-time-quality-control)
 	* [Fisheries quality control tests](#fisheries-quality-control-tests)
 		* [Platform identification (under development)](#platform-identification-under-development)
@@ -46,8 +46,9 @@ Collection of manuals and scripts to assist in automated quality assurance and q
 		* [Stuck value / flat line test](#stuck-value-flat-line-test)
 		* [Rate of change test](#rate-of-change-test)
 		* [Mud test](#mud-test)
-		* [Timing / gap test](#timing-gap-test)
+		* [Timing/gap test](#timinggap-test)
 		* [Climatology test](#climatology-test)
+        * [Sensor calibration date test](#sensor-calibration-date-test)
 * [References](#references)
 
 <!--te-->
@@ -121,11 +122,12 @@ The flags used to indicate QC status are based on existing standards defined by 
 | Climatology               | climatology_test          | flag_clima             | TEMPERATURE_QC   | no          | 1, 3 |
 
 ## Fishing Specific and/or Moana Specific Tests
-| Test Name                 | Method Name               | Flag Name              | Variable QC Flag | Recommended |  Flag Values |
-|---------------------------|---------------------------|------------------------|------------------|-------------|--------------|
-| Stationary Position Check | stationary_position_check | flag_surf_loc          | LOCATION_QC      | yes         | 1, 2, 3 |
-| Start End Distance Check  | start_end_dist_check      | flag_dist              | LOCATION_QC      | yes         | 1, 2, 3 |
-| Sensor Reset              |                           | flag_dist              | LOCATION_QC      | yes         | 1, 4 |
+| Test Name                 | Method Name               | Flag Name             | Variable QC Flag | Recommended | Flag Values |
+|---------------------------|---------------------------|-----------------------|------------------|-------------|-------------|
+| Stationary Position Check | stationary_position_check | flag_surf_loc         | LOCATION_QC      | yes         | 1, 2, 3     |
+| Start End Distance Check  | start_end_dist_check      | flag_dist             | LOCATION_QC      | yes         | 1, 2, 3     |
+| Sensor Reset              |                           | flag_dist             | LOCATION_QC      | yes         | 1, 4        |
+| Sensor Calibration Date   |                           | flag_calibration_date | DATETIME_QC      | yes         | 1, 3        |
 
 
 ## Real-time Quality control
@@ -382,11 +384,12 @@ This test is applied only in the Up segment. Controls whether the temperature se
 
 <br>
 
-#### Timing/ gap test
+#### Timing/gap test
 
 <div align="center">
 
 This test controls whether the most recent measurement has been received within the expected time period. Action: Values that fail the test should be flagged as suspect data (3).
+
 | **Flags** | **Description** |
 | :---: | :---: |
 | Suspect (3) | _Check for the arrival of data <br><br> Data didn&#39;t come in as expected: NOW – TIM\_STMP &gt; TIM\_INC_ |
@@ -453,6 +456,24 @@ Seasonal limits per area still have to be defined, in the meantime we take min a
 </div>
 
 <br>
+
+#### Sensor calibration date test
+
+<div align="center">
+
+This test verifies whether the most recent measurement falls within the expected time range of calibration. Action: Values that fail the test should be flagged as suspect data (3).
+
+|  **Flags**  |            **Description**             |
+|:-----------:|:--------------------------------------:|
+| Suspect (3) | _Measurement out of calibration date._ |
+|  Pass (1)   |   _Applies for test pass condition._   |
+
+<sub> Table 16. Sensor calibration date test flags. </sub>
+
+</div>
+
+<br>
+
 
 ## References
 
