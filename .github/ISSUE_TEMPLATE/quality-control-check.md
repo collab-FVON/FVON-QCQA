@@ -7,10 +7,7 @@ assignees: CarlesBDC, GMaynard1, collab-FVON
 
 ---
 
-## Parameter: 
-
-## Check Name:
-
-## Check Description:
-
-## Link to python code:
+- [ ] Parameter:
+- [ ] Check Name:
+- [ ] Brief Description:
+- [ ] Link to Python code:
