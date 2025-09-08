@@ -10,9 +10,14 @@ assignees: CarlesBDC, GMaynard1, collab-FVON
 - Parameter:
 - Check Name:
 - Brief Description:
-- Link to Python code:
 - Items for Discussion:
   - [ ] Item 1
   - [ ] Item 2
   - [ ] Item 3
-  - [ ] ... 
+  - [ ] ...
+- Suggested Inputs for Python function:
+  - [ ] Input 1
+  - [ ] Input 2
+  - [ ] ...
+ - Link to suggested Python function
+  - *link goes here*
