@@ -19,5 +19,5 @@ assignees: CarlesBDC, GMaynard1, collab-FVON
   - [ ] Input 1
   - [ ] Input 2
   - [ ] ...
- - Link to suggested Python function
+- Link to suggested Python function
   - *link goes here*
