@@ -22,28 +22,40 @@ def flag_impossible_date(fvon_program, filename):
     """
     
     import pandas as pd
+    import json
     from datetime import date, datetime, timedelta
     from zoneinfo import ZoneInfo
     
     # Read in available program metadata
-    p_meta = pd.read_csv("Proposed_QC_Checks/supporting_data.csv")
-    
-    # Check to see if the program exists
-    try:
-      p_meta['Abbreviation'].isin([fvon_program])
-    except KeyError:
-      print("Error: fvon_program not defined.")
+    with open("Proposed_QC_Checks/supporting_data.json","r") as file:
+      p_meta=json.load(file)
       
-    # Define a start_date based on the program
-    condition = p_meta['Abbreviation']==fvon_program
-    start_date = p_meta['Start_Date'][p_meta[condition].index.to_list()]
+    # Define a start_date and end_date based on the program
+    i = -1
+  
+    for index,item in enumerate(p_meta):
+      if item['Abbreviation'] == fvon_program:
+        i = index
+        start_date = item['Start_Date']
+        end_date = item['End_Date']
+        break
+    
+    if i == -1:
+      raise ValueError("FVON program abbreviation not found")
+
     # Reformat start_date from character into a timestamp with timezone
-    start_date = datetime.strptime(start_date[0],"%Y-%m-%d")
+    start_date = datetime.strptime(start_date,"%Y-%m-%d")
     start_date = pd.to_datetime(start_date)
     start_date = start_date.replace(tzinfo=ZoneInfo("UTC"))
     
     # Define the end date
-    end_date = pd.to_datetime(date.today()+timedelta(days=1))
+    # If the program is ongoing, use tomorrow's date as the end_date, otherwise
+    # use the existing end_date from the .json file
+    if end_date is None:
+      end_date = pd.to_datetime(date.today()+timedelta(days=1))
+    else:
+      end_date = datetime.strptime(end_date, "%Y-%m-%d")
+      
     # Add a timezone
     end_date = end_date.replace(tzinfo=ZoneInfo("UTC"))
     
