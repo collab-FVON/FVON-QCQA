@@ -14,7 +14,7 @@ This work builds on the QC/QA frameworks provided by [BDC_qc](https://github.com
 
 ## Updates and Contributions
 
-This README and the QC/QA workflows will be updated collaboratively by the FVON team. Contributions are welcome! Please submit a pull request for any additions or improvements.
+This README and the QA/QC workflows will be updated collaboratively by the FVON team. Contributions are welcome! Please submit a pull request for any additions or improvements.
 
 ---
 
@@ -481,10 +481,12 @@ Annie Wong, Robert Keeley, Thierry Carval and the Argo Data Management Team (202
 
 Argo Quality Control Manual for CTD and Trajectory Data. [http://dx.doi.org/10.13155/33951](http://dx.doi.org/10.13155/33951)
 
+EuroGOOS DATA-MEQ working group (2010). Recommendations for in-situ data Near Real Time Quality Control. https://doi.org/10.13155/36230
+
+IMOS Fishing Vessels as Ships of Opportunity (FishSOOP), Real-time Quality Assurance and Quality Control Practice Manual, Version 1.0. [https:doi.org/10.26198/sp0r-p448](https://repository.oceanbestpractices.org/handle/11329/2629)
+
 U.S. Integrated Ocean Observing System, 2020. Manual for Real-Time Quality Control of In-situ Temperature and Salinity Data Version 2.1: A Guide to Quality Control and Quality Assurance of In-situ Temperature and Salinity Observations. 50 pp. [https://doi.org/10.25923/x02m-m555](https://doi.org/10.25923/x02m-m555)
 
 U.S. Integrated Ocean Observing System (2016) Manual for Quality Control of Temperature and Salinity Data Observations from Gliders. Version 1.0. Silver Spring, MD, U.S. Department of Commerce, National Oceanic and Atmospheric Administration, National Ocean Service, Integrated Ocean Observing System, 23pp. & Appendices. http://hdl.handle.net/11329/289
-
-EuroGOOS DATA-MEQ working group (2010). Recommendations for in-situ data Near Real Time Quality Control. https://doi.org/10.13155/36230
 
 </div>
