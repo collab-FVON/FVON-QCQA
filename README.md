@@ -1,6 +1,6 @@
 <div align="justify">
 
-# FVON-QCQA: Fishing Vessel Ocean Observing Network - QC/QA Guidelines
+# FVON-QCQA: Fishing Vessel Ocean Observing Network - QA/QC Guidelines
 
 This repository provides tools, workflows, and guidelines for automated near real-time Quality Control (QC) of fishing vessel ocean observing data. 
 
@@ -8,7 +8,7 @@ This repository provides tools, workflows, and guidelines for automated near rea
 
 ## Acknowledgement
 
-This work builds on the QC/QA frameworks provided by [BDC_qc](https://github.com/BerringDC/BDC_qc), developed by the Ocean Data Network (ODN) and [moana-qc](https://github.com/metocean/moana-qc/blob/master/docs/moana_sensor_qc.md), developed by the moana project. Addtitional input from the AdriFOOS program at [CNR-IRBIM](https://www.irbim.cnr.it/en/). We extend their work and adapt it for FVON's specific needs.
+This work builds on the QA/QC frameworks provided by [BDC_qc](https://github.com/BerringDC/BDC_qc), developed by the Ocean Data Network (ODN) and [moana-qc](https://github.com/metocean/moana-qc/blob/master/docs/moana_sensor_qc.md), developed by the moana project. Addtitional input from the AdriFOOS program at [CNR-IRBIM](https://www.irbim.cnr.it/en/). We extend their work and adapt it for FVON's specific needs.
 
 ---
 
